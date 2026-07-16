@@ -9,8 +9,86 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as QualityRouteImport } from './routes/quality'
+import { Route as ProductsRouteImport } from './routes/products'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as OemRouteImport } from './routes/oem'
+import { Route as ManufacturingRouteImport } from './routes/manufacturing'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as FaqsRouteImport } from './routes/faqs'
+import { Route as ExportProcessRouteImport } from './routes/export-process'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BlogRouteImport } from './routes/blog'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QualityRoute = QualityRouteImport.update({
+  id: '/quality',
+  path: '/quality',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsRoute = ProductsRouteImport.update({
+  id: '/products',
+  path: '/products',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OemRoute = OemRouteImport.update({
+  id: '/oem',
+  path: '/oem',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ManufacturingRoute = ManufacturingRouteImport.update({
+  id: '/manufacturing',
+  path: '/manufacturing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqsRoute = FaqsRouteImport.update({
+  id: '/faqs',
+  path: '/faqs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExportProcessRoute = ExportProcessRouteImport.update({
+  id: '/export-process',
+  path: '/export-process',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +97,214 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
+  '/contact': typeof ContactRoute
+  '/export-process': typeof ExportProcessRoute
+  '/faqs': typeof FaqsRoute
+  '/gallery': typeof GalleryRoute
+  '/manufacturing': typeof ManufacturingRoute
+  '/oem': typeof OemRoute
+  '/privacy': typeof PrivacyRoute
+  '/products': typeof ProductsRoute
+  '/quality': typeof QualityRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
+  '/contact': typeof ContactRoute
+  '/export-process': typeof ExportProcessRoute
+  '/faqs': typeof FaqsRoute
+  '/gallery': typeof GalleryRoute
+  '/manufacturing': typeof ManufacturingRoute
+  '/oem': typeof OemRoute
+  '/privacy': typeof PrivacyRoute
+  '/products': typeof ProductsRoute
+  '/quality': typeof QualityRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
+  '/contact': typeof ContactRoute
+  '/export-process': typeof ExportProcessRoute
+  '/faqs': typeof FaqsRoute
+  '/gallery': typeof GalleryRoute
+  '/manufacturing': typeof ManufacturingRoute
+  '/oem': typeof OemRoute
+  '/privacy': typeof PrivacyRoute
+  '/products': typeof ProductsRoute
+  '/quality': typeof QualityRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/contact'
+    | '/export-process'
+    | '/faqs'
+    | '/gallery'
+    | '/manufacturing'
+    | '/oem'
+    | '/privacy'
+    | '/products'
+    | '/quality'
+    | '/sitemap.xml'
+    | '/terms'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/contact'
+    | '/export-process'
+    | '/faqs'
+    | '/gallery'
+    | '/manufacturing'
+    | '/oem'
+    | '/privacy'
+    | '/products'
+    | '/quality'
+    | '/sitemap.xml'
+    | '/terms'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/contact'
+    | '/export-process'
+    | '/faqs'
+    | '/gallery'
+    | '/manufacturing'
+    | '/oem'
+    | '/privacy'
+    | '/products'
+    | '/quality'
+    | '/sitemap.xml'
+    | '/terms'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  BlogRoute: typeof BlogRoute
+  ContactRoute: typeof ContactRoute
+  ExportProcessRoute: typeof ExportProcessRoute
+  FaqsRoute: typeof FaqsRoute
+  GalleryRoute: typeof GalleryRoute
+  ManufacturingRoute: typeof ManufacturingRoute
+  OemRoute: typeof OemRoute
+  PrivacyRoute: typeof PrivacyRoute
+  ProductsRoute: typeof ProductsRoute
+  QualityRoute: typeof QualityRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TermsRoute: typeof TermsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quality': {
+      id: '/quality'
+      path: '/quality'
+      fullPath: '/quality'
+      preLoaderRoute: typeof QualityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products': {
+      id: '/products'
+      path: '/products'
+      fullPath: '/products'
+      preLoaderRoute: typeof ProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/oem': {
+      id: '/oem'
+      path: '/oem'
+      fullPath: '/oem'
+      preLoaderRoute: typeof OemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/manufacturing': {
+      id: '/manufacturing'
+      path: '/manufacturing'
+      fullPath: '/manufacturing'
+      preLoaderRoute: typeof ManufacturingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faqs': {
+      id: '/faqs'
+      path: '/faqs'
+      fullPath: '/faqs'
+      preLoaderRoute: typeof FaqsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/export-process': {
+      id: '/export-process'
+      path: '/export-process'
+      fullPath: '/export-process'
+      preLoaderRoute: typeof ExportProcessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,17 +317,20 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  BlogRoute: BlogRoute,
+  ContactRoute: ContactRoute,
+  ExportProcessRoute: ExportProcessRoute,
+  FaqsRoute: FaqsRoute,
+  GalleryRoute: GalleryRoute,
+  ManufacturingRoute: ManufacturingRoute,
+  OemRoute: OemRoute,
+  PrivacyRoute: PrivacyRoute,
+  ProductsRoute: ProductsRoute,
+  QualityRoute: QualityRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

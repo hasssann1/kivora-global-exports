@@ -11,6 +11,8 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { SiteHeader } from "../components/SiteHeader";
+import { SiteFooter } from "../components/SiteFooter";
 
 function NotFoundComponent() {
   return (
@@ -77,16 +79,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "KIVORA | Premium Football Manufacturing & Global Export" },
+      {
+        name: "description",
+        content:
+          "KIVORA SPORTS (PVT) LTD manufactures premium footballs, goalkeeper gloves and training equipment for wholesalers, clubs and private-label brands worldwide.",
+      },
+      { name: "author", content: "KIVORA SPORTS (PRIVATE) LIMITED" },
+      { property: "og:title", content: "KIVORA | Premium Football Manufacturing & Global Export" },
+      {
+        property: "og:description",
+        content:
+          "Engineered for performance. FIFA-quality footballs and training gear, exported worldwide from Sialkot, Pakistan.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@KivoraSports" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
@@ -119,8 +135,13 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <div className="relative min-h-screen">
+        <SiteHeader />
+        <main className="pt-16 md:pt-20">
+          <Outlet />
+        </main>
+        <SiteFooter />
+      </div>
     </QueryClientProvider>
   );
 }
