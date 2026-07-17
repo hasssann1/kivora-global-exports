@@ -276,10 +276,15 @@ function Categories() {
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {CATEGORIES.map((c) => (
-            <div
+          {CATEGORIES.map((c, i) => (
+            <motion.div
               key={c.title}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-card transition hover:border-gold/30"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -6 }}
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-card transition hover:border-gold/30 hover:shadow-[0_30px_80px_-30px_oklch(0.78_0.14_82/0.35)]"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
@@ -297,7 +302,7 @@ function Categories() {
                   Enquire <ArrowRight className="h-3 w-3" />
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -331,9 +336,13 @@ function Process() {
         </div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {STEPS.map((s) => (
-            <div
+          {STEPS.map((s, i) => (
+            <motion.div
               key={s.n}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: i * 0.06 }}
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-card p-8 transition hover:border-gold/40"
             >
               <div className="pointer-events-none absolute -right-6 -top-8 font-display text-[120px] font-bold leading-none text-white/[0.03]">
@@ -344,7 +353,7 @@ function Process() {
                 <h3 className="mt-4 font-display text-2xl">{s.t}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -369,12 +378,19 @@ function Stats() {
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">Trusted at scale.</h2>
         </div>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
-          {items.map(({ icon: Icon, v, l }) => (
-            <div key={l} className="text-center">
+          {items.map(({ icon: Icon, v, l }, i) => (
+            <motion.div
+              key={l}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.05 }}
+              className="text-center"
+            >
               <Icon className="mx-auto h-6 w-6 text-gold" />
               <div className="mt-4 font-display text-3xl text-gradient-gold md:text-4xl">{v}</div>
               <div className="mt-2 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">{l}</div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -481,8 +497,16 @@ function Testimonials() {
         </h2>
       </div>
       <div className="mt-14 grid gap-6 md:grid-cols-3">
-        {items.map((t) => (
-          <blockquote key={t.a} className="glass rounded-2xl p-8">
+        {items.map((t, i) => (
+          <motion.blockquote
+            key={t.a}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, delay: i * 0.1 }}
+            whileHover={{ y: -4 }}
+            className="glass rounded-2xl p-8"
+          >
             <div className="mb-4 flex gap-1 text-gold">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="h-4 w-4 fill-current" />
@@ -490,7 +514,7 @@ function Testimonials() {
             </div>
             <p className="font-display text-lg leading-relaxed">"{t.q}"</p>
             <footer className="mt-6 text-xs uppercase tracking-[0.2em] text-muted-foreground">— {t.a}</footer>
-          </blockquote>
+          </motion.blockquote>
         ))}
       </div>
     </section>
