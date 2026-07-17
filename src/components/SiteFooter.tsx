@@ -17,7 +17,7 @@ export function SiteFooter() {
               </div>
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              KIVORA SPORTS (PRIVATE) LIMITED manufactures FIFA-quality footballs and training accessories in Sialkot, Pakistan, exporting to distributors and brands in 40+ countries.
+              KIVORA SPORTS (PRIVATE) LIMITED is a Pakistan-based exporter of premium football equipment and training accessories, sourcing from trusted manufacturing partners in Sialkot for buyers in 40+ countries.
             </p>
             <div className="mt-6 flex gap-3">
               {[Linkedin, Instagram, Facebook].map((Icon, i) => (
@@ -39,9 +39,9 @@ export function SiteFooter() {
               {[
                 ["/about", "About Us"],
                 ["/products", "Products"],
-                ["/manufacturing", "Manufacturing"],
+                ["/manufacturing", "Sourcing & Partners"],
                 ["/oem", "OEM & Private Label"],
-                ["/quality", "Quality Control"],
+                ["/quality", "Quality Assurance"],
               ].map(([to, l]) => (
                 <li key={to}>
                   <Link to={to} className="transition hover:text-foreground">{l}</Link>
@@ -69,9 +69,9 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-gold/80">Contact</h4>
+            <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-gold/80">Head Office</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-4 w-4 text-gold" /> Sialkot Industrial Estate, Punjab, Pakistan</li>
+              <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-4 w-4 text-gold" /> Gujranwala, Punjab, Pakistan</li>
               <li className="flex items-start gap-3"><Phone className="mt-0.5 h-4 w-4 text-gold" /> +92 300 000 0000</li>
               <li className="flex items-start gap-3"><Mail className="mt-0.5 h-4 w-4 text-gold" /> export@kivorasports.com</li>
               <li className="flex items-start gap-3"><Globe className="mt-0.5 h-4 w-4 text-gold" /> kivorasports.com</li>
@@ -81,7 +81,7 @@ export function SiteFooter() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-8 text-xs text-muted-foreground md:flex-row md:items-center">
           <div>© {new Date().getFullYear()} KIVORA SPORTS (PRIVATE) LIMITED. All rights reserved.</div>
-          <div className="tracking-[0.2em] uppercase text-gold/70">Engineered in Sialkot · Exported Worldwide</div>
+          <div className="tracking-[0.2em] uppercase text-gold/70">Sourced in Sialkot · Exported Worldwide</div>
         </div>
       </div>
     </footer>
