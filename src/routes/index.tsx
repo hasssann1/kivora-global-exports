@@ -508,8 +508,8 @@ function Testimonials() {
             className="glass rounded-2xl p-8"
           >
             <div className="mb-4 flex gap-1 text-gold">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-current" />
+              {Array.from({ length: 5 }).map((_, s) => (
+                <Star key={s} className="h-4 w-4 fill-current" />
               ))}
             </div>
             <p className="font-display text-lg leading-relaxed">"{t.q}"</p>
