@@ -18,7 +18,7 @@ import hero from "@/assets/hero-footballs.jpg";
 import manufacturing from "@/assets/manufacturing.jpg";
 import stitching from "@/assets/stitching.jpg";
 import exportImg from "@/assets/export.jpg";
-import productBall from "@/assets/product-ball.png";
+import productBall from "@/assets/product-ball.jpg";
 import trainingGear from "@/assets/training-gear.jpg";
 
 export const Route = createFileRoute("/")({
@@ -125,7 +125,7 @@ function Hero() {
                 alt=""
                 animate={{ rotate: 360 }}
                 transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-                className="relative h-full w-full object-contain drop-shadow-[0_40px_120px_rgba(255,180,60,0.35)]"
+                className="relative h-full w-full object-contain mix-blend-lighten drop-shadow-[0_40px_120px_rgba(255,180,60,0.35)]"
               />
             </div>
           </div>
