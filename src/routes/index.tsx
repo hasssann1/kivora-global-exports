@@ -193,21 +193,21 @@ function Intro() {
         <div>
           <SectionEyebrow>Who We Are</SectionEyebrow>
           <h2 className="mt-4 text-4xl font-semibold leading-tight md:text-5xl">
-            A Pakistani manufacturer with a <span className="text-gradient-gold">global standard.</span>
+            A Pakistani exporter with a <span className="text-gradient-gold">global standard.</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            From our vertically integrated facility in Sialkot — the football
-            capital of the world — KIVORA produces match, training and
-            promotional footballs alongside a full range of training gear.
-            Every unit is engineered to meet the durability, air-retention and
-            shape-retention benchmarks demanded by professional buyers.
+            Headquartered in Gujranwala, KIVORA sources match, training and
+            promotional footballs — plus a full range of training gear — from a
+            curated network of manufacturing partners in Sialkot, the football
+            capital of the world. We manage supplier selection, quality control,
+            private labeling and worldwide export on behalf of our buyers.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {[
-              "Thermal-bonded & hand-stitched construction",
-              "FIFA Quality & FIFA Quality Pro on request",
-              "Full OEM & private label solutions",
-              "In-house QC on every production run",
+              "Vetted Sialkot manufacturing partner network",
+              "FIFA Quality & FIFA Quality Pro available on request",
+              "Full OEM & private-label sourcing solutions",
+              "Independent QC on every export order",
             ].map((t) => (
               <li key={t} className="flex items-start gap-3 text-sm">
                 <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-gold" />
@@ -237,9 +237,9 @@ function Intro() {
             />
           </div>
           <div className="absolute -bottom-8 -left-6 hidden w-64 rounded-xl glass p-6 shadow-2xl md:block">
-            <div className="text-xs uppercase tracking-[0.25em] text-gold">Craftsmanship</div>
-            <div className="mt-2 font-display text-2xl">Hand-stitched precision</div>
-            <div className="mt-1 text-xs text-muted-foreground">Every seam tested to withstand match-day intensity.</div>
+            <div className="text-xs uppercase tracking-[0.25em] text-gold">Sourcing</div>
+            <div className="mt-2 font-display text-2xl">Inspected at the source</div>
+            <div className="mt-1 text-xs text-muted-foreground">KIVORA inspectors on-site at every partner facility.</div>
           </div>
         </div>
       </div>
