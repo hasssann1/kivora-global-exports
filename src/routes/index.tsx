@@ -140,8 +140,8 @@ function Hero() {
         >
           {[
             ["40+", "Countries Served"],
-            ["2M+", "Footballs / Year"],
-            ["16+", "Years Experience"],
+            ["500+", "Global Clients"],
+            ["1,200+", "Containers Shipped"],
             ["FIFA", "Quality Standards"],
           ].map(([v, l]) => (
             <div key={l}>
