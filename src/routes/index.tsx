@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { Reveal } from "@/components/Reveal";
 import {
   ArrowRight,
   ShieldCheck,
