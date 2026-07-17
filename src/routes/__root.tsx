@@ -79,24 +79,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "KIVORA | Premium Football Manufacturing & Global Export" },
+      { title: "KIVORA | Premium Football Equipment Exporter from Pakistan" },
       {
         name: "description",
         content:
-          "KIVORA SPORTS (PVT) LTD manufactures premium footballs, goalkeeper gloves and training equipment for wholesalers, clubs and private-label brands worldwide.",
+          "KIVORA SPORTS (PVT) LTD is a Pakistan-based exporter of premium footballs, goalkeeper gloves and training accessories, sourcing from trusted manufacturing partners in Sialkot for wholesalers, clubs and private-label brands worldwide.",
       },
       { name: "author", content: "KIVORA SPORTS (PRIVATE) LIMITED" },
-      { property: "og:title", content: "KIVORA | Premium Football Manufacturing & Global Export" },
+      { property: "og:title", content: "KIVORA | Premium Football Equipment Exporter from Pakistan" },
       {
         property: "og:description",
         content:
-          "KIVORA SPORTS (PVT) LTD manufactures premium footballs, goalkeeper gloves and training equipment for wholesalers, clubs and private-label brands worldwide.",
+          "Pakistan-based exporter of premium football equipment. Sourcing, quality control, private labeling and worldwide shipping from Sialkot's trusted manufacturing partners.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@KivoraSports" },
-      { name: "twitter:title", content: "KIVORA | Premium Football Manufacturing & Global Export" },
-      { name: "twitter:description", content: "KIVORA SPORTS (PVT) LTD manufactures premium footballs, goalkeeper gloves and training equipment for wholesalers, clubs and private-label brands worldwide." },
+      { name: "twitter:title", content: "KIVORA | Premium Football Equipment Exporter from Pakistan" },
+      { name: "twitter:description", content: "Pakistan-based exporter of premium football equipment. Sourcing, quality control, private labeling and worldwide shipping from Sialkot's trusted manufacturing partners." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bddbbbd4-f45a-46dc-9438-045134138e13/id-preview-bc40dc16--f8d01399-9c3b-4ec3-b470-2fd110d1145f.lovable.app-1784288483009.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bddbbbd4-f45a-46dc-9438-045134138e13/id-preview-bc40dc16--f8d01399-9c3b-4ec3-b470-2fd110d1145f.lovable.app-1784288483009.png" },
     ],
