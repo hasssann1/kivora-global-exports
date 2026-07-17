@@ -90,11 +90,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Engineered for performance. FIFA-quality footballs and training gear, exported worldwide from Sialkot, Pakistan.",
+          "KIVORA SPORTS (PVT) LTD manufactures premium footballs, goalkeeper gloves and training equipment for wholesalers, clubs and private-label brands worldwide.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@KivoraSports" },
+      { name: "twitter:title", content: "KIVORA | Premium Football Manufacturing & Global Export" },
+      { name: "twitter:description", content: "KIVORA SPORTS (PVT) LTD manufactures premium footballs, goalkeeper gloves and training equipment for wholesalers, clubs and private-label brands worldwide." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bddbbbd4-f45a-46dc-9438-045134138e13/id-preview-bc40dc16--f8d01399-9c3b-4ec3-b470-2fd110d1145f.lovable.app-1784288483009.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bddbbbd4-f45a-46dc-9438-045134138e13/id-preview-bc40dc16--f8d01399-9c3b-4ec3-b470-2fd110d1145f.lovable.app-1784288483009.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
