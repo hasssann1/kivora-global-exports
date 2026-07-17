@@ -7,7 +7,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact KIVORA | Request an Export Quote" },
-      { name: "description", content: "Get in touch with KIVORA SPORTS for football manufacturing, private-label programs and export quotations." },
+      { name: "description", content: "Get in touch with KIVORA SPORTS for football sourcing, private-label programmes and export quotations from Pakistan." },
     ],
   }),
   component: ContactPage,
@@ -29,7 +29,7 @@ function ContactPage() {
             className="rounded-2xl border border-white/10 bg-card p-8 md:p-10"
           >
             <h2 className="font-display text-2xl">Request a quotation</h2>
-            <p className="mt-2 text-sm text-muted-foreground">Fill in the details below and we'll get back to you shortly.</p>
+            <p className="mt-2 text-sm text-muted-foreground">Share your requirements and we'll respond with pricing, MOQ and lead time.</p>
             <div className="mt-8 grid gap-5 md:grid-cols-2">
               <Field label="Full name" name="name" required />
               <Field label="Company" name="company" />
@@ -47,7 +47,7 @@ function ContactPage() {
             </button>
             {sent && (
               <div className="mt-4 rounded-lg border border-gold/30 bg-gold/5 p-4 text-sm text-gold">
-                Thanks — your inquiry has been received. Our team will respond within 24 hours.
+                Thanks — your inquiry has been received. Our export team will respond within 24 hours.
               </div>
             )}
           </form>
@@ -64,18 +64,19 @@ function ContactPage() {
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-card p-8">
-              <h3 className="font-display text-xl">Head office</h3>
+              <h3 className="font-display text-xl">Head Office</h3>
               <p className="mt-3 flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="mt-0.5 h-4 w-4 text-gold" />
-                KIVORA SPORTS (PVT) LTD, Sialkot Industrial Estate, Punjab, Pakistan
+                KIVORA SPORTS (PVT) LTD<br />
+                Gujranwala, Punjab, Pakistan
               </p>
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-card p-8">
-              <h3 className="font-display text-xl">Factory</h3>
+              <h3 className="font-display text-xl">Sourcing hub</h3>
               <p className="mt-3 flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="mt-0.5 h-4 w-4 text-gold" />
-                Kotli Loharan, Sialkot, Punjab, Pakistan
+                Partner manufacturing network in Sialkot, Punjab, Pakistan — visited weekly by our sourcing and QA team.
               </p>
             </div>
 
@@ -83,7 +84,7 @@ function ContactPage() {
               <div className="aspect-[16/10] w-full bg-[color:var(--surface)]">
                 <iframe
                   title="Map"
-                  src="https://www.google.com/maps?q=Sialkot,Pakistan&output=embed"
+                  src="https://www.google.com/maps?q=Gujranwala,Punjab,Pakistan&output=embed"
                   className="h-full w-full opacity-80"
                   loading="lazy"
                 />
