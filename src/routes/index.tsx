@@ -248,12 +248,12 @@ function Intro() {
 }
 
 const CATEGORIES = [
-  { title: "Match Footballs", desc: "Thermal bonded and hybrid construction for professional play.", img: hero },
-  { title: "Training Footballs", desc: "Durable everyday balls built for academy and club sessions.", img: productBall },
+  { title: "Match Footballs", desc: "Thermal-bonded and hybrid balls sourced for professional play.", img: hero },
+  { title: "Training Footballs", desc: "Durable everyday balls for academy and club sessions.", img: productBall },
   { title: "Goalkeeper Gloves", desc: "Match, pro and junior lines with superior grip and protection.", img: trainingGear },
-  { title: "Training Equipment", desc: "Cones, ladders, hurdles, poles and parachutes for speed & agility.", img: trainingGear },
+  { title: "Training Equipment", desc: "Cones, ladders, hurdles, poles and parachutes for speed and agility.", img: trainingGear },
   { title: "Team Essentials", desc: "Training bibs, captain armbands, ball bags and equipment bags.", img: stitching },
-  { title: "OEM & Custom", desc: "Private-label footballs with your logo, colors and packaging.", img: manufacturing },
+  { title: "OEM & Private Label", desc: "Your logo, colours and packaging — sourced end-to-end.", img: manufacturing },
 ];
 
 function Categories() {
@@ -311,12 +311,12 @@ function Categories() {
 }
 
 const STEPS = [
-  { n: "01", t: "Design & Sampling", d: "Concept sheets, panel design and custom prototype samples." },
-  { n: "02", t: "Material Selection", d: "PU, TPU and rubber materials sourced to your spec." },
-  { n: "03", t: "Panel Cut & Print", d: "Precision cutting and Pantone-matched multi-color printing." },
-  { n: "04", t: "Bonding & Stitching", d: "Thermal bonding, machine or hand stitching by trained artisans." },
-  { n: "05", t: "Inspection & Testing", d: "Sphericity, weight, bounce and air retention verified per FIFA." },
-  { n: "06", t: "Packaging & Export", d: "Custom branded packaging, container loading and worldwide shipping." },
+  { n: "01", t: "Inquiry & Brief", d: "You share requirements, quantities and target specifications." },
+  { n: "02", t: "Supplier Matching", d: "We assign the right manufacturing partner from our vetted Sialkot network." },
+  { n: "03", t: "Sampling & Approval", d: "Prototypes produced with your artwork and signed off before bulk." },
+  { n: "04", t: "Production Coordination", d: "KIVORA manages timelines, materials and communication with the partner." },
+  { n: "05", t: "Quality Inspection", d: "In-line and pre-shipment QC by KIVORA inspectors at the facility." },
+  { n: "06", t: "Export & Delivery", d: "Documentation, container loading and worldwide shipping to your port." },
 ];
 
 function Process() {
@@ -325,13 +325,13 @@ function Process() {
       <div className="pointer-events-none absolute inset-0 bg-radial-glow opacity-60" />
       <div className="container-x relative">
         <div className="text-center">
-          <SectionEyebrow>Manufacturing</SectionEyebrow>
+          <SectionEyebrow>How We Work</SectionEyebrow>
           <h2 className="mx-auto mt-4 max-w-3xl text-4xl font-semibold md:text-5xl">
-            From raw material to <span className="text-gradient-gold">match-ready ball.</span>
+            From inquiry to <span className="text-gradient-gold">delivered container.</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            A vertically integrated process that lets us guarantee quality at
-            every stage — and deliver at scale.
+            A transparent, six-stage sourcing and export workflow — with one
+            accountable KIVORA team from your first inquiry to final delivery.
           </p>
         </div>
 
@@ -400,10 +400,10 @@ function Stats() {
 
 function WhyUs() {
   const items = [
-    { icon: Award, t: "FIFA-grade quality", d: "Products can be certified to FIFA Quality and FIFA Quality Pro on request." },
-    { icon: Factory, t: "Vertically integrated", d: "In-house cutting, printing, stitching, bladder and QC — full control, faster lead times." },
-    { icon: Boxes, t: "OEM & private label", d: "Your logo, colors, panels and packaging. Pantone matching and barcode/retail packaging." },
-    { icon: Truck, t: "Global logistics", d: "FOB, CIF and DDP terms via Karachi Port with reliable freight partners." },
+    { icon: Award, t: "FIFA-grade sourcing", d: "Products can be certified to FIFA Quality and FIFA Quality Pro through our partner network on request." },
+    { icon: Factory, t: "Trusted partner network", d: "Curated Sialkot manufacturers audited for quality, compliance and capacity." },
+    { icon: Boxes, t: "OEM & private label", d: "Your logo, colours, panels and packaging — Pantone-matched and retail-ready." },
+    { icon: Truck, t: "Global logistics", d: "FOB, CIF and DDP shipments via Karachi Port with reliable freight partners." },
   ];
   return (
     <section className="container-x py-24 md:py-32">
