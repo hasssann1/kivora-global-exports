@@ -125,7 +125,7 @@ function Hero() {
                 alt=""
                 animate={{ rotate: 360 }}
                 transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-                className="relative h-full w-full rounded-full object-contain drop-shadow-[0_40px_120px_rgba(0,0,0,0.7)]"
+                className="relative h-full w-full object-contain drop-shadow-[0_40px_120px_rgba(255,180,60,0.35)]"
               />
             </div>
           </div>
