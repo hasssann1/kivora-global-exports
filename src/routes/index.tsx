@@ -1,4 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { motion } from "framer-motion";
+import { Reveal } from "@/components/Reveal";
 import {
   ArrowRight,
   ShieldCheck,
@@ -53,26 +55,47 @@ function Hero() {
           width={1600}
           height={1200}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />
         <div className="absolute inset-0 bg-radial-glow" />
       </div>
 
-      <div className="container-x relative flex min-h-[92vh] flex-col justify-center py-24">
-        <div className="max-w-3xl">
+      <div className="container-x relative z-10 flex min-h-[92vh] flex-col justify-center py-24">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          className="max-w-3xl"
+        >
           <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.25em] text-gold">
             <Sparkles className="h-3.5 w-3.5" /> Premium Football Manufacturer · Since 2008
           </div>
-          <h1 className="mt-8 text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl lg:text-[88px]">
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-8 text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl lg:text-[88px]"
+          >
             Engineered for <span className="text-gradient-gold">Performance.</span>
             <br />
             Exported to the <span className="text-gradient-gold">World.</span>
-          </h1>
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl"
+          >
             KIVORA SPORTS crafts FIFA-quality footballs, goalkeeper gloves and
             training equipment in Sialkot, Pakistan — trusted by wholesalers,
             clubs and private-label brands in 40+ countries.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mt-10 flex flex-wrap gap-4"
+          >
             <Link
               to="/contact"
               className="group inline-flex h-12 items-center gap-2 rounded-full bg-gradient-gold px-7 text-sm font-semibold text-primary-foreground shadow-[0_20px_60px_-15px_oklch(0.78_0.14_82/0.55)] transition hover:brightness-110"
@@ -86,23 +109,35 @@ function Hero() {
             >
               Explore Catalog
             </Link>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="pointer-events-none absolute right-6 top-1/2 hidden -translate-y-1/2 lg:block">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, rotate: -20 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          transition={{ duration: 1.4, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          className="pointer-events-none absolute -right-20 top-1/2 z-0 hidden -translate-y-1/2 lg:block xl:right-0"
+        >
           <div className="animate-float">
-            <div className="relative h-[420px] w-[420px] xl:h-[520px] xl:w-[520px]">
-              <div className="absolute inset-0 rounded-full bg-gold/20 blur-3xl" />
-              <img
+            <div className="relative h-[440px] w-[440px] xl:h-[560px] xl:w-[560px]">
+              <div className="absolute inset-0 rounded-full bg-gold/25 blur-3xl" />
+              <motion.img
                 src={productBall}
                 alt=""
-                className="relative h-full w-full rounded-full object-cover shadow-[0_40px_120px_-20px_black]"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+                className="relative h-full w-full rounded-full object-contain drop-shadow-[0_40px_120px_rgba(0,0,0,0.7)]"
               />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="mt-16 grid max-w-4xl grid-cols-2 gap-8 border-t border-white/10 pt-8 md:grid-cols-4">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.6 }}
+          className="mt-16 grid max-w-4xl grid-cols-2 gap-8 border-t border-white/10 pt-8 md:grid-cols-4"
+        >
           {[
             ["40+", "Countries Served"],
             ["2M+", "Footballs / Year"],
@@ -114,7 +149,7 @@ function Hero() {
               <div className="mt-1 text-xs uppercase tracking-[0.2em] text-muted-foreground">{l}</div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
