@@ -18,7 +18,7 @@ import hero from "@/assets/hero-footballs.jpg";
 import manufacturing from "@/assets/manufacturing.jpg";
 import stitching from "@/assets/stitching.jpg";
 import exportImg from "@/assets/export.jpg";
-import productBall from "@/assets/product-ball.jpg";
+import productBall from "@/assets/product-ball.png";
 import trainingGear from "@/assets/training-gear.jpg";
 
 export const Route = createFileRoute("/")({
