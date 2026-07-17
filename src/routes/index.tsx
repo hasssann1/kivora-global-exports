@@ -67,7 +67,7 @@ function Hero() {
           className="max-w-3xl"
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.25em] text-gold">
-            <Sparkles className="h-3.5 w-3.5" /> Premium Football Manufacturer · Since 2008
+            <Sparkles className="h-3.5 w-3.5" /> Premium Football Equipment Exporter
           </div>
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -75,7 +75,7 @@ function Hero() {
             transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="mt-8 text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl lg:text-[88px]"
           >
-            Engineered for <span className="text-gradient-gold">Performance.</span>
+            Sourced for <span className="text-gradient-gold">Performance.</span>
             <br />
             Exported to the <span className="text-gradient-gold">World.</span>
           </motion.h1>
@@ -85,9 +85,10 @@ function Hero() {
             transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
             className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl"
           >
-            KIVORA SPORTS crafts FIFA-quality footballs, goalkeeper gloves and
-            training equipment in Sialkot, Pakistan — trusted by wholesalers,
-            clubs and private-label brands in 40+ countries.
+            KIVORA SPORTS is a Pakistan-based exporter of premium footballs,
+            goalkeeper gloves and training accessories — sourced from trusted
+            manufacturing partners in Sialkot and shipped to wholesalers, clubs
+            and private-label brands in 40+ countries.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -139,8 +140,8 @@ function Hero() {
         >
           {[
             ["40+", "Countries Served"],
-            ["2M+", "Footballs / Year"],
-            ["16+", "Years Experience"],
+            ["500+", "Global Clients"],
+            ["1,200+", "Containers Shipped"],
             ["FIFA", "Quality Standards"],
           ].map(([v, l]) => (
             <div key={l}>
@@ -192,21 +193,21 @@ function Intro() {
         <div>
           <SectionEyebrow>Who We Are</SectionEyebrow>
           <h2 className="mt-4 text-4xl font-semibold leading-tight md:text-5xl">
-            A Pakistani manufacturer with a <span className="text-gradient-gold">global standard.</span>
+            A Pakistani exporter with a <span className="text-gradient-gold">global standard.</span>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            From our vertically integrated facility in Sialkot — the football
-            capital of the world — KIVORA produces match, training and
-            promotional footballs alongside a full range of training gear.
-            Every unit is engineered to meet the durability, air-retention and
-            shape-retention benchmarks demanded by professional buyers.
+            Headquartered in Gujranwala, KIVORA sources match, training and
+            promotional footballs — plus a full range of training gear — from a
+            curated network of manufacturing partners in Sialkot, the football
+            capital of the world. We manage supplier selection, quality control,
+            private labeling and worldwide export on behalf of our buyers.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {[
-              "Thermal-bonded & hand-stitched construction",
-              "FIFA Quality & FIFA Quality Pro on request",
-              "Full OEM & private label solutions",
-              "In-house QC on every production run",
+              "Vetted Sialkot manufacturing partner network",
+              "FIFA Quality & FIFA Quality Pro available on request",
+              "Full OEM & private-label sourcing solutions",
+              "Independent QC on every export order",
             ].map((t) => (
               <li key={t} className="flex items-start gap-3 text-sm">
                 <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-gold" />
@@ -236,9 +237,9 @@ function Intro() {
             />
           </div>
           <div className="absolute -bottom-8 -left-6 hidden w-64 rounded-xl glass p-6 shadow-2xl md:block">
-            <div className="text-xs uppercase tracking-[0.25em] text-gold">Craftsmanship</div>
-            <div className="mt-2 font-display text-2xl">Hand-stitched precision</div>
-            <div className="mt-1 text-xs text-muted-foreground">Every seam tested to withstand match-day intensity.</div>
+            <div className="text-xs uppercase tracking-[0.25em] text-gold">Sourcing</div>
+            <div className="mt-2 font-display text-2xl">Inspected at the source</div>
+            <div className="mt-1 text-xs text-muted-foreground">KIVORA inspectors on-site at every partner facility.</div>
           </div>
         </div>
       </div>
@@ -247,12 +248,12 @@ function Intro() {
 }
 
 const CATEGORIES = [
-  { title: "Match Footballs", desc: "Thermal bonded and hybrid construction for professional play.", img: hero },
-  { title: "Training Footballs", desc: "Durable everyday balls built for academy and club sessions.", img: productBall },
+  { title: "Match Footballs", desc: "Thermal-bonded and hybrid balls sourced for professional play.", img: hero },
+  { title: "Training Footballs", desc: "Durable everyday balls for academy and club sessions.", img: productBall },
   { title: "Goalkeeper Gloves", desc: "Match, pro and junior lines with superior grip and protection.", img: trainingGear },
-  { title: "Training Equipment", desc: "Cones, ladders, hurdles, poles and parachutes for speed & agility.", img: trainingGear },
+  { title: "Training Equipment", desc: "Cones, ladders, hurdles, poles and parachutes for speed and agility.", img: trainingGear },
   { title: "Team Essentials", desc: "Training bibs, captain armbands, ball bags and equipment bags.", img: stitching },
-  { title: "OEM & Custom", desc: "Private-label footballs with your logo, colors and packaging.", img: manufacturing },
+  { title: "OEM & Private Label", desc: "Your logo, colours and packaging — sourced end-to-end.", img: manufacturing },
 ];
 
 function Categories() {
@@ -310,12 +311,12 @@ function Categories() {
 }
 
 const STEPS = [
-  { n: "01", t: "Design & Sampling", d: "Concept sheets, panel design and custom prototype samples." },
-  { n: "02", t: "Material Selection", d: "PU, TPU and rubber materials sourced to your spec." },
-  { n: "03", t: "Panel Cut & Print", d: "Precision cutting and Pantone-matched multi-color printing." },
-  { n: "04", t: "Bonding & Stitching", d: "Thermal bonding, machine or hand stitching by trained artisans." },
-  { n: "05", t: "Inspection & Testing", d: "Sphericity, weight, bounce and air retention verified per FIFA." },
-  { n: "06", t: "Packaging & Export", d: "Custom branded packaging, container loading and worldwide shipping." },
+  { n: "01", t: "Inquiry & Brief", d: "You share requirements, quantities and target specifications." },
+  { n: "02", t: "Supplier Matching", d: "We assign the right manufacturing partner from our vetted Sialkot network." },
+  { n: "03", t: "Sampling & Approval", d: "Prototypes produced with your artwork and signed off before bulk." },
+  { n: "04", t: "Production Coordination", d: "KIVORA manages timelines, materials and communication with the partner." },
+  { n: "05", t: "Quality Inspection", d: "In-line and pre-shipment QC by KIVORA inspectors at the facility." },
+  { n: "06", t: "Export & Delivery", d: "Documentation, container loading and worldwide shipping to your port." },
 ];
 
 function Process() {
@@ -324,13 +325,13 @@ function Process() {
       <div className="pointer-events-none absolute inset-0 bg-radial-glow opacity-60" />
       <div className="container-x relative">
         <div className="text-center">
-          <SectionEyebrow>Manufacturing</SectionEyebrow>
+          <SectionEyebrow>How We Work</SectionEyebrow>
           <h2 className="mx-auto mt-4 max-w-3xl text-4xl font-semibold md:text-5xl">
-            From raw material to <span className="text-gradient-gold">match-ready ball.</span>
+            From inquiry to <span className="text-gradient-gold">delivered container.</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            A vertically integrated process that lets us guarantee quality at
-            every stage — and deliver at scale.
+            A transparent, six-stage sourcing and export workflow — with one
+            accountable KIVORA team from your first inquiry to final delivery.
           </p>
         </div>
 
@@ -399,10 +400,10 @@ function Stats() {
 
 function WhyUs() {
   const items = [
-    { icon: Award, t: "FIFA-grade quality", d: "Products can be certified to FIFA Quality and FIFA Quality Pro on request." },
-    { icon: Factory, t: "Vertically integrated", d: "In-house cutting, printing, stitching, bladder and QC — full control, faster lead times." },
-    { icon: Boxes, t: "OEM & private label", d: "Your logo, colors, panels and packaging. Pantone matching and barcode/retail packaging." },
-    { icon: Truck, t: "Global logistics", d: "FOB, CIF and DDP terms via Karachi Port with reliable freight partners." },
+    { icon: Award, t: "FIFA-grade sourcing", d: "Products can be certified to FIFA Quality and FIFA Quality Pro through our partner network on request." },
+    { icon: Factory, t: "Trusted partner network", d: "Curated Sialkot manufacturers audited for quality, compliance and capacity." },
+    { icon: Boxes, t: "OEM & private label", d: "Your logo, colours, panels and packaging — Pantone-matched and retail-ready." },
+    { icon: Truck, t: "Global logistics", d: "FOB, CIF and DDP shipments via Karachi Port with reliable freight partners." },
   ];
   return (
     <section className="container-x py-24 md:py-32">

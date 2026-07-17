@@ -29,7 +29,7 @@ const IMGS = [
 function GalleryPage() {
   return (
     <>
-      <PageHero eyebrow="Gallery" title="Inside" accent="Kivora." description="A visual tour of our facility, craftsmanship and export operations." />
+      <PageHero eyebrow="Gallery" title="Inside" accent="Kivora." description="A visual look at our sourcing operations, partner facilities and export workflow." />
       <section className="container-x pb-24">
         <div className="grid auto-rows-[240px] grid-cols-2 gap-4 md:grid-cols-3">
           {IMGS.map((i, idx) => (

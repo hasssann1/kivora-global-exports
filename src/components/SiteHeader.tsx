@@ -7,7 +7,7 @@ const NAV = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/products", label: "Products" },
-  { to: "/manufacturing", label: "Manufacturing" },
+  { to: "/manufacturing", label: "Sourcing" },
   { to: "/oem", label: "OEM" },
   { to: "/quality", label: "Quality" },
   { to: "/export-process", label: "Export" },

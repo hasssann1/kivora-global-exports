@@ -6,28 +6,28 @@ import stitching from "@/assets/stitching.jpg";
 export const Route = createFileRoute("/oem")({
   head: () => ({
     meta: [
-      { title: "OEM & Private Label | KIVORA Custom Football Manufacturing" },
-      { name: "description", content: "Launch your own football brand with KIVORA's OEM and private-label program: custom logo, colors, packaging and Pantone matching." },
+      { title: "OEM & Private Label | KIVORA Custom Football Sourcing" },
+      { name: "description", content: "Launch your own football brand with KIVORA's OEM and private-label sourcing programme — custom logos, colours, packaging and Pantone matching from our Sialkot partner network." },
     ],
   }),
   component: OEMPage,
 });
 
 const SERVICES = [
-  { icon: Tag, t: "Custom Logo Printing", d: "Single or multi-color logo printing on panels or bladder." },
-  { icon: Palette, t: "Pantone Matching", d: "Exact color reproduction to your brand guidelines." },
-  { icon: Layers, t: "Material Options", d: "PU, TPU, PVC and rubber in multiple grades and finishes." },
-  { icon: Package, t: "Packaging Customization", d: "Retail boxes, gift packs, poly bags, hangtags and barcodes." },
-  { icon: Printer, t: "Panel & Color Design", d: "Custom panel design, sublimation and graphic prints." },
-  { icon: Boxes, t: "OEM & ODM", d: "Full OEM production plus ODM support with our design team." },
+  { icon: Tag, t: "Custom Logo Printing", d: "Single or multi-colour logo printing coordinated with our partner facilities." },
+  { icon: Palette, t: "Pantone Matching", d: "Exact colour reproduction to your brand guidelines with pre-production swatches." },
+  { icon: Layers, t: "Material Options", d: "PU, TPU, PVC and rubber in multiple grades and finishes across our supplier network." },
+  { icon: Package, t: "Packaging Customisation", d: "Retail boxes, gift packs, poly bags, hangtags and barcodes to your artwork." },
+  { icon: Printer, t: "Panel & Colour Design", d: "Custom panel design, sublimation prints and multi-colour graphics." },
+  { icon: Boxes, t: "OEM Coordination", d: "Full OEM sourcing programme with a single accountable export partner." },
 ];
 
 const STEPS = [
-  ["01", "Brief", "You share brand assets, spec and target retail price."],
-  ["02", "Sampling", "We produce prototypes with your logo and packaging."],
-  ["03", "Approval", "Sign-off on samples, colors and packaging."],
-  ["04", "Production", "Bulk production under strict in-line QC."],
-  ["05", "Delivery", "Consolidated container shipping to your port."],
+  ["01", "Brief", "You share brand assets, specification and target retail price."],
+  ["02", "Sourcing", "We match the brief to the right manufacturing partner in our network."],
+  ["03", "Sampling", "Prototypes produced with your logo, colours and packaging for approval."],
+  ["04", "Production", "Bulk order coordinated with our partner under KIVORA quality control."],
+  ["05", "Delivery", "Consolidated container shipping and documentation to your port."],
 ];
 
 function OEMPage() {
@@ -36,15 +36,15 @@ function OEMPage() {
       <PageHero
         eyebrow="OEM & Private Label"
         title="Your brand,"
-        accent="our production line."
-        description="Launch a football brand with a manufacturer that understands the export market. From artwork to Amazon-ready packaging, we handle it all."
+        accent="our sourcing network."
+        description="Launch a football brand with an export partner that understands international retail. From artwork approval to Amazon-ready packaging, KIVORA handles sourcing, quality and shipping end-to-end."
         image={stitching}
       />
 
       <section className="container-x py-24">
         <SectionEyebrow>Services</SectionEyebrow>
         <h2 className="mt-4 max-w-3xl text-4xl font-semibold md:text-5xl">
-          Fully customizable production for <span className="text-gradient-gold">every brand.</span>
+          Fully customisable sourcing for <span className="text-gradient-gold">every brand.</span>
         </h2>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -73,7 +73,7 @@ function OEMPage() {
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link to="/contact" className="inline-flex h-12 items-center rounded-full bg-gradient-gold px-7 text-sm font-semibold text-primary-foreground">
-              Start a private label project
+              Start a private-label project
             </Link>
           </div>
           <ul className="mt-10 grid gap-3 sm:grid-cols-2">
