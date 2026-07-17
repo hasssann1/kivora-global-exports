@@ -67,7 +67,7 @@ function Hero() {
           className="max-w-3xl"
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.25em] text-gold">
-            <Sparkles className="h-3.5 w-3.5" /> Premium Football Manufacturer · Since 2008
+            <Sparkles className="h-3.5 w-3.5" /> Premium Football Equipment Exporter
           </div>
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -75,7 +75,7 @@ function Hero() {
             transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="mt-8 text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl lg:text-[88px]"
           >
-            Engineered for <span className="text-gradient-gold">Performance.</span>
+            Sourced for <span className="text-gradient-gold">Performance.</span>
             <br />
             Exported to the <span className="text-gradient-gold">World.</span>
           </motion.h1>
@@ -85,9 +85,10 @@ function Hero() {
             transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
             className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl"
           >
-            KIVORA SPORTS crafts FIFA-quality footballs, goalkeeper gloves and
-            training equipment in Sialkot, Pakistan — trusted by wholesalers,
-            clubs and private-label brands in 40+ countries.
+            KIVORA SPORTS is a Pakistan-based exporter of premium footballs,
+            goalkeeper gloves and training accessories — sourced from trusted
+            manufacturing partners in Sialkot and shipped to wholesalers, clubs
+            and private-label brands in 40+ countries.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
