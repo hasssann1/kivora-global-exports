@@ -8,7 +8,13 @@ export const Route = createFileRoute("/manufacturing")({
     meta: [
       { title: "Sourcing & Manufacturing Partners | KIVORA SPORTS" },
       { name: "description", content: "How KIVORA sources football equipment from vetted manufacturing partners in Sialkot, Pakistan — supplier verification, quality inspection and export coordination." },
+      { property: "og:title", content: "Sourcing & Manufacturing Partners | KIVORA SPORTS" },
+      { property: "og:description", content: "How KIVORA sources football equipment from vetted manufacturing partners in Sialkot, Pakistan — supplier verification, quality inspection and export coordination." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/manufacturing" },
+      { name: "twitter:title", content: "Sourcing & Manufacturing Partners | KIVORA SPORTS" },
+      { name: "twitter:description", content: "How KIVORA sources football equipment from vetted manufacturing partners in Sialkot, Pakistan — supplier verification, quality inspection and export coordination." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/manufacturing" }],
   }),
   component: SourcingPage,
 });

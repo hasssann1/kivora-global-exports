@@ -33,7 +33,13 @@ export const Route = createFileRoute("/products")({
     meta: [
       { title: "Products | KIVORA Footballs & Training Equipment" },
       { name: "description", content: "Explore KIVORA's full range: match, training, professional, promotional, futsal and mini footballs plus goalkeeper gloves and training accessories." },
+      { property: "og:title", content: "Products | KIVORA Footballs & Training Equipment" },
+      { property: "og:description", content: "Explore KIVORA's full range: match, training, professional, promotional, futsal and mini footballs plus goalkeeper gloves and training accessories." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/products" },
+      { name: "twitter:title", content: "Products | KIVORA Footballs & Training Equipment" },
+      { name: "twitter:description", content: "Explore KIVORA's full range: match, training, professional, promotional, futsal and mini footballs plus goalkeeper gloves and training accessories." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/products" }],
   }),
   component: ProductsPage,
 });

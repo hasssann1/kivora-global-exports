@@ -8,7 +8,13 @@ export const Route = createFileRoute("/quality")({
     meta: [
       { title: "Quality Assurance | KIVORA Export Inspection Process" },
       { name: "description", content: "KIVORA quality assurance: supplier verification, in-line inspection at partner facilities, pre-shipment QC and third-party audit coordination." },
+      { property: "og:title", content: "Quality Assurance | KIVORA Export Inspection Process" },
+      { property: "og:description", content: "KIVORA quality assurance: supplier verification, in-line inspection at partner facilities, pre-shipment QC and third-party audit coordination." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/quality" },
+      { name: "twitter:title", content: "Quality Assurance | KIVORA Export Inspection Process" },
+      { name: "twitter:description", content: "KIVORA quality assurance: supplier verification, in-line inspection at partner facilities, pre-shipment QC and third-party audit coordination." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/quality" }],
   }),
   component: QualityPage,
 });

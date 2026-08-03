@@ -22,6 +22,58 @@ import productBall from "@/assets/product-ball.jpg";
 import trainingGear from "@/assets/training-gear.jpg";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Football Exporter Pakistan | KIVORA SPORTS Sialkot Sourcing" },
+      {
+        name: "description",
+        content:
+          "KIVORA SPORTS exports premium footballs, goalkeeper gloves and training equipment from Sialkot, Pakistan — OEM private label, strict QC and worldwide shipping for wholesalers and clubs.",
+      },
+      { property: "og:title", content: "Football Exporter Pakistan | KIVORA SPORTS Sialkot Sourcing" },
+      {
+        property: "og:description",
+        content:
+          "Premium football equipment exporter from Pakistan: sourcing, quality control, private labeling and worldwide shipping.",
+      },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/" },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bddbbbd4-f45a-46dc-9438-045134138e13/id-preview-bc40dc16--f8d01399-9c3b-4ec3-b470-2fd110d1145f.lovable.app-1784288483009.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bddbbbd4-f45a-46dc-9438-045134138e13/id-preview-bc40dc16--f8d01399-9c3b-4ec3-b470-2fd110d1145f.lovable.app-1784288483009.png",
+      },
+    ],
+    links: [
+      { rel: "canonical", href: "https://kivora-global-exports.lovable.app/" },
+      { rel: "preload", as: "image", href: hero, fetchpriority: "high" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "KIVORA SPORTS (PRIVATE) LIMITED",
+          url: "https://kivora-global-exports.lovable.app/",
+          description:
+            "Export and sourcing company for football equipment, based in Gujranwala, Pakistan with partner manufacturers in Sialkot.",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Gujranwala",
+            addressRegion: "Punjab",
+            addressCountry: "PK",
+          },
+          email: "export@kivorasports.com",
+          sameAs: ["https://kivora-global-exports.lovable.app/"],
+        }),
+      },
+    ],
+  }),
   component: HomePage,
 });
 
@@ -53,6 +105,8 @@ function Hero() {
           className="h-full w-full object-cover"
           width={1600}
           height={1200}
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />

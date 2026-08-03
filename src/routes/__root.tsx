@@ -97,15 +97,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@KivoraSports" },
       { name: "twitter:title", content: "KIVORA | Premium Football Equipment Exporter from Pakistan" },
       { name: "twitter:description", content: "Pakistan-based exporter of premium football equipment. Sourcing, quality control, private labeling and worldwide shipping from Sialkot's trusted manufacturing partners." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bddbbbd4-f45a-46dc-9438-045134138e13/id-preview-bc40dc16--f8d01399-9c3b-4ec3-b470-2fd110d1145f.lovable.app-1784288483009.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bddbbbd4-f45a-46dc-9438-045134138e13/id-preview-bc40dc16--f8d01399-9c3b-4ec3-b470-2fd110d1145f.lovable.app-1784288483009.png" },
+      { property: "og:site_name", content: "KIVORA SPORTS" },
+      { name: "robots", content: "index, follow" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap",
       },
       {
         rel: "stylesheet",

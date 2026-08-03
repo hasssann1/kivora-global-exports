@@ -8,7 +8,13 @@ export const Route = createFileRoute("/contact")({
     meta: [
       { title: "Contact KIVORA | Request an Export Quote" },
       { name: "description", content: "Get in touch with KIVORA SPORTS for football sourcing, private-label programmes and export quotations from Pakistan." },
+      { property: "og:title", content: "Contact KIVORA | Request an Export Quote" },
+      { property: "og:description", content: "Get in touch with KIVORA SPORTS for football sourcing, private-label programmes and export quotations from Pakistan." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/contact" },
+      { name: "twitter:title", content: "Contact KIVORA | Request an Export Quote" },
+      { name: "twitter:description", content: "Get in touch with KIVORA SPORTS for football sourcing, private-label programmes and export quotations from Pakistan." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/contact" }],
   }),
   component: ContactPage,
 });

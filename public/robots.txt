@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://kivora-global-exports.lovable.app/sitemap.xml

@@ -17,7 +17,13 @@ export function PageHero({
     <section className="relative isolate overflow-hidden">
       {image ? (
         <div className="absolute inset-0 -z-10">
-          <img src={image} alt="" className="h-full w-full object-cover" />
+          <img
+            src={image}
+            alt=""
+            className="h-full w-full object-cover"
+            decoding="async"
+            fetchPriority="high"
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background" />
           <div className="absolute inset-0 bg-radial-glow" />
         </div>

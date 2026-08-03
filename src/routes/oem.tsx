@@ -8,7 +8,13 @@ export const Route = createFileRoute("/oem")({
     meta: [
       { title: "OEM & Private Label | KIVORA Custom Football Sourcing" },
       { name: "description", content: "Launch your own football brand with KIVORA's OEM and private-label sourcing programme — custom logos, colours, packaging and Pantone matching from our Sialkot partner network." },
+      { property: "og:title", content: "OEM & Private Label | KIVORA Custom Football Sourcing" },
+      { property: "og:description", content: "Launch your own football brand with KIVORA's OEM and private-label sourcing programme — custom logos, colours, packaging and Pantone matching from our Sialkot partner network." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/oem" },
+      { name: "twitter:title", content: "OEM & Private Label | KIVORA Custom Football Sourcing" },
+      { name: "twitter:description", content: "Launch your own football brand with KIVORA's OEM and private-label sourcing programme — custom logos, colours, packaging and Pantone matching from our Sialkot partner network." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/oem" }],
   }),
   component: OEMPage,
 });
