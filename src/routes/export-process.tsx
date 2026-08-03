@@ -7,7 +7,13 @@ export const Route = createFileRoute("/export-process")({
     meta: [
       { title: "Export Process | KIVORA Worldwide Football Shipping" },
       { name: "description", content: "From inquiry to delivery: KIVORA's end-to-end export workflow for wholesalers and private-label buyers worldwide." },
+      { property: "og:title", content: "Export Process | KIVORA Worldwide Football Shipping" },
+      { property: "og:description", content: "From inquiry to delivery: KIVORA's end-to-end export workflow for wholesalers and private-label buyers worldwide." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/export-process" },
+      { name: "twitter:title", content: "Export Process | KIVORA Worldwide Football Shipping" },
+      { name: "twitter:description", content: "From inquiry to delivery: KIVORA's end-to-end export workflow for wholesalers and private-label buyers worldwide." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/export-process" }],
   }),
   component: ExportPage,
 });

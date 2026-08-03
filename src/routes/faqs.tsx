@@ -6,7 +6,13 @@ export const Route = createFileRoute("/faqs")({
     meta: [
       { title: "FAQs | KIVORA Football Export Questions" },
       { name: "description", content: "Answers to common questions about KIVORA's sourcing model, MOQs, sampling, lead times, incoterms and OEM services." },
+      { property: "og:title", content: "FAQs | KIVORA Football Export Questions" },
+      { property: "og:description", content: "Answers to common questions about KIVORA's sourcing model, MOQs, sampling, lead times, incoterms and OEM services." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/faqs" },
+      { name: "twitter:title", content: "FAQs | KIVORA Football Export Questions" },
+      { name: "twitter:description", content: "Answers to common questions about KIVORA's sourcing model, MOQs, sampling, lead times, incoterms and OEM services." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/faqs" }],
   }),
   component: FAQPage,
 });

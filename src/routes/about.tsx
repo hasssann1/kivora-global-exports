@@ -9,7 +9,13 @@ export const Route = createFileRoute("/about")({
     meta: [
       { title: "About KIVORA | Pakistan-Based Football Equipment Exporter" },
       { name: "description", content: "KIVORA SPORTS (PVT) LTD is a Gujranwala-based export company connecting global buyers with trusted football manufacturing partners in Sialkot, Pakistan." },
+      { property: "og:title", content: "About KIVORA | Pakistan-Based Football Equipment Exporter" },
+      { property: "og:description", content: "KIVORA SPORTS (PVT) LTD is a Gujranwala-based export company connecting global buyers with trusted football manufacturing partners in Sialkot, Pakistan." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/about" },
+      { name: "twitter:title", content: "About KIVORA | Pakistan-Based Football Equipment Exporter" },
+      { name: "twitter:description", content: "KIVORA SPORTS (PVT) LTD is a Gujranwala-based export company connecting global buyers with trusted football manufacturing partners in Sialkot, Pakistan." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/about" }],
   }),
   component: AboutPage,
 });

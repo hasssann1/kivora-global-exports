@@ -10,7 +10,13 @@ export const Route = createFileRoute("/blog")({
     meta: [
       { title: "Journal | KIVORA Insights on Football Manufacturing" },
       { name: "description", content: "Insights on football manufacturing, private-label branding and global export from KIVORA SPORTS." },
+      { property: "og:title", content: "Journal | KIVORA Insights on Football Manufacturing" },
+      { property: "og:description", content: "Insights on football manufacturing, private-label branding and global export from KIVORA SPORTS." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/blog" },
+      { name: "twitter:title", content: "Journal | KIVORA Insights on Football Manufacturing" },
+      { name: "twitter:description", content: "Insights on football manufacturing, private-label branding and global export from KIVORA SPORTS." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/blog" }],
   }),
   component: BlogPage,
 });

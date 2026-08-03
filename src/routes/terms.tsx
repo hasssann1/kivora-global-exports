@@ -6,7 +6,13 @@ export const Route = createFileRoute("/terms")({
     meta: [
       { title: "Terms & Conditions | KIVORA SPORTS" },
       { name: "description", content: "The terms and conditions governing use of the KIVORA SPORTS website and inquiries." },
+      { property: "og:title", content: "Terms & Conditions | KIVORA SPORTS" },
+      { property: "og:description", content: "The terms and conditions governing use of the KIVORA SPORTS website and inquiries." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/terms" },
+      { name: "twitter:title", content: "Terms & Conditions | KIVORA SPORTS" },
+      { name: "twitter:description", content: "The terms and conditions governing use of the KIVORA SPORTS website and inquiries." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/terms" }],
   }),
   component: TermsPage,
 });

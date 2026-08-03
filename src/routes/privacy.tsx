@@ -6,7 +6,13 @@ export const Route = createFileRoute("/privacy")({
     meta: [
       { title: "Privacy Policy | KIVORA SPORTS" },
       { name: "description", content: "How KIVORA SPORTS collects, uses and protects information shared through this website and export inquiries." },
+      { property: "og:title", content: "Privacy Policy | KIVORA SPORTS" },
+      { property: "og:description", content: "How KIVORA SPORTS collects, uses and protects information shared through this website and export inquiries." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/privacy" },
+      { name: "twitter:title", content: "Privacy Policy | KIVORA SPORTS" },
+      { name: "twitter:description", content: "How KIVORA SPORTS collects, uses and protects information shared through this website and export inquiries." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/privacy" }],
   }),
   component: PrivacyPage,
 });

@@ -12,7 +12,13 @@ export const Route = createFileRoute("/gallery")({
     meta: [
       { title: "Gallery | KIVORA Facility, Products & Export" },
       { name: "description", content: "A visual tour of KIVORA's facility, craftsmanship, products and worldwide export operations." },
+      { property: "og:title", content: "Gallery | KIVORA Facility, Products & Export" },
+      { property: "og:description", content: "A visual tour of KIVORA's facility, craftsmanship, products and worldwide export operations." },
+      { property: "og:url", content: "https://kivora-global-exports.lovable.app/gallery" },
+      { name: "twitter:title", content: "Gallery | KIVORA Facility, Products & Export" },
+      { name: "twitter:description", content: "A visual tour of KIVORA's facility, craftsmanship, products and worldwide export operations." },
     ],
+    links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/gallery" }],
   }),
   component: GalleryPage,
 });
