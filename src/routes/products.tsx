@@ -120,8 +120,8 @@ function ProductsPage() {
                     <img
                       src={it.img}
                       alt={`${it.name} with KIVORA branding`}
-                      width={1024}
-                      height={1024}
+                      width={900}
+                      height={900}
                       loading="lazy"
                       className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                     />
