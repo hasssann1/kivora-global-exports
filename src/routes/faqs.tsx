@@ -13,6 +13,20 @@ export const Route = createFileRoute("/faqs")({
       { name: "twitter:description", content: "Answers to common questions about KIVORA's sourcing model, MOQs, sampling, lead times, incoterms and OEM services." },
     ],
     links: [{ rel: "canonical", href: "https://kivora-global-exports.lovable.app/faqs" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: FAQS.map(([q, a]) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          })),
+        }),
+      },
+    ],
   }),
   component: FAQPage,
 });
