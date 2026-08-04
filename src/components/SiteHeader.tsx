@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import logo from "@/assets/kivora-logo.png";
 
 const NAV = [
@@ -60,7 +60,14 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-5 lg:flex">
+          <a
+            href="tel:0312456789"
+            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition hover:text-gold"
+          >
+            <Phone className="h-4 w-4 text-gold" />
+            0312456789
+          </a>
           <Link
             to="/contact"
             className="inline-flex h-10 items-center rounded-full bg-gradient-gold px-5 text-sm font-semibold text-primary-foreground shadow-[0_10px_30px_-10px_oklch(0.78_0.14_82/0.6)] transition hover:brightness-110"
@@ -92,6 +99,14 @@ export function SiteHeader() {
                 {n.label}
               </Link>
             ))}
+            <a
+              href="tel:0312456789"
+              onClick={() => setOpen(false)}
+              className="mt-1 inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm text-muted-foreground hover:bg-white/5 hover:text-foreground"
+            >
+              <Phone className="h-4 w-4 text-gold" />
+              0312456789
+            </a>
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
